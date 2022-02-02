@@ -21,6 +21,13 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
+#Pass installation directory as argument 1 - if not in config
+if [ ! -z "$1" ]; then
+    PYTHON_INTERPRETER="$1"
+fi
+
+echo "Python Interpreter Path : $PYTHON_INTERPRETER"
+
 cd $PACKAGE_NAME
 [ $? -ne 0 ] && { echo "error line ( ${LINENO} )"; exit 1; }
 
