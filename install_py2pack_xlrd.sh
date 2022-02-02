@@ -12,7 +12,7 @@
 #
 # -----------------------------------------------------
 
-PYTHON_DIR="$HOME/mypy2/bin/bin/python2"
+PYTHON_INTERPRETER="$HOME/mypy2/bin/bin/python2"
 
 source ./config.sh
 
@@ -29,4 +29,4 @@ if [ ! -f setup.py ]; then
     exit 1
 fi
 
-$PYTHON_DIR setup.py install
+$PYTHON_INTERPRETER setup.py install

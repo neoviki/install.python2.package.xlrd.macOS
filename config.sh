@@ -15,6 +15,6 @@
 
 
 #Python2 Location
-PYTHON_DIR="$HOME/mypy2/bin/bin/python2"
+PYTHON_INTERPRETER="$HOME/mypy2/bin/bin/python2"
 
 PACKAGE_NAME="xlrd"
